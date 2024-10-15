@@ -34,6 +34,7 @@ result = add_many(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 print(result)
 """
 
+"""
 def add_mul(choice, *args):
     if choice == "add":
         result = 0
@@ -44,4 +45,29 @@ def add_mul(choice, *args):
         for i in args:
             result = result * i
     return result
+result = add_mul('add',1,2,3,4,5)
+print(result)
+result = add_mul('mul',1,2,3,4,5)
+print(result)
+"""
 
+"""
+def print_kwargs(**kwargs):
+    print(kwargs)
+print_kwargs(a=1)
+"""
+
+"""
+def vartest(a):
+    a = a+1
+    
+vartest(3)
+print(a)
+"""
+
+def vartest(a):
+    a = a+1
+    return a
+
+a = vartest(3)
+print(a)
