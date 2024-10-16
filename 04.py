@@ -65,9 +65,52 @@ vartest(3)
 print(a)
 """
 
+"""
 def vartest(a):
     a = a+1
     return a
 
 a = vartest(3)
 print(a)
+"""
+
+"""
+for i in range(10):
+    print(i, end =' ')
+"""
+
+"""
+f = open("새파일.txt", 'w')
+f.close()
+"""
+
+"""
+f = open("새파일.txt", 'w')
+for i in range(1, 11):
+    data = "%d번째 줄입니다.\n" % i
+    f.write(data)
+f.close()
+"""
+
+# Q1 홀수, 짝수 판별하기
+"""
+def is_odd(number):
+    if number % 2 == 1:
+        return print("True")
+    else:
+        return print("False")
+is_odd(99999999)
+is_odd(10000000000000)
+is_odd(3)
+is_odd(4)
+is_odd(5)
+is_odd(6)
+"""
+
+# Q2 모든 입력의 평균값 구하기
+def avg_numbers(*args):
+    result = 0
+    for i in args:
+        result += i
+    return result / len(args)
+avg_numbers(1, 2)
